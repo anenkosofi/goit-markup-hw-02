@@ -31,8 +31,8 @@ body {
     list-style: none;
 }
 .button {
-    color: var(--secondary-text-color);
-    background-color: var(--accent);
+    color: var(--additional-text-color);
+    background-color: var(--primary-background-color);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -40,27 +40,38 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
 }
+.button:hover,
+.button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent);
+}
 
 .button-primary {
-    color: var(--additional-text-color);
-    background-color: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     letter-spacing: inherit;
       
 }
-.button-primary:hover,
-.button-primary:focus {
-    color: var(--secondary-text-color);
-    background-color: var(--accent);
-}
+
 .section-title {
     color: var(--additional-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+}
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 /* Шапка сайта */
 .site-nav .link {
@@ -122,7 +133,10 @@ body {
 /* Чем мы занимаемся */
 .work-list {}
 /* Наша команда */
-.team-member {
+.team-card {
+    background-color: var(--secondary-text-color);
+}
+.team-title {
     color: var(--additional-text-color);
     font-weight: 500;
     font-size: 16px;
