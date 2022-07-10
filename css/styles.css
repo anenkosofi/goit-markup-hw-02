@@ -6,6 +6,7 @@
     --additional-secondary-text-color: rgba(255, 255, 255, 0.6);
     --primary-background-color: #F5F4FA;
     --secondary-background-color: #2F303A;
+    --portfolio-bcg-color: #EEEEEE
 
 }
 body {
@@ -169,7 +170,13 @@ body {
     color: var(--secondary-text-color);
 }
 /* Страница Портфолио */
+.body-portfolio {
+    background-color: var(--portfolio-bcg-color);
+}
 /* Блок Герой */
+.portfolio-card {
+    background-color: var(--secondary-text-color);
+}
 .portfolio-title {
     color: var(--additional-text-color);
     font-weight: 700;
