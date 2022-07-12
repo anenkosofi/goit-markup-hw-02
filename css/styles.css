@@ -25,13 +25,13 @@ body {
     text-decoration: none;
     
 }
-.accent {
+.logo-accent {
     color: var(--accent);
 }
 .list {
     list-style: none;
 }
-.button {
+.button-studio {
     color: var(--additional-text-color);
     background-color: var(--primary-background-color);
     font-family: inherit;
@@ -41,21 +41,22 @@ body {
     letter-spacing: 0.06em;
     cursor: pointer;
 }
-.button:hover,
-.button:focus {
+.button-studio:hover,
+.button-studio:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent);
 }
 
-.button-accent {
+.button-portfolio {
     font-weight: 500;
-    font-size: 16px;
     line-height: 1.62;
     letter-spacing: inherit;
       
 }
 
-.section-title {
+.features-title,
+.work-title,
+.team-title {
     color: var(--additional-text-color);
     font-weight: 700;
     font-size: 36px;
@@ -120,7 +121,7 @@ body {
     text-transform: uppercase;
 }
 /* Особенности */
-.features-list .title {
+.features-list-title {
     color: var(--additional-text-color);
     font-weight: 700;
     font-size: 14px;
@@ -132,12 +133,12 @@ body {
     line-height: 1.17;
 }
 /* Чем мы занимаемся */
-.work-list {}
+
 /* Наша команда */
 .team-card {
     background-color: var(--secondary-text-color);
 }
-.team-title {
+.team-card-title {
     color: var(--additional-text-color);
     font-weight: 500;
     font-size: 16px;
