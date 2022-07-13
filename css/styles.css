@@ -1,11 +1,14 @@
 :root {
     --primary-text-color: #757575;
-    --additional-text-color: #212121;
+    --additional-primary-text-color: #212121;
     --accent: #2196F3;
     --secondary-accent: #188CE8;
-    --primary-background-color: #FFFFFF;
     --secondary-text-color: rgba(255, 255, 255, 0.6);
+    --additional-secondary-text-color: #FFFFFF;
+    --primary-button-color: #FFFFFF;
+    --primary-background-color: #FFFFFF;
     --secondary-background-color: #2F303A;
+    --button-bg-color: #F5F4FA;
     --team-background-color: #F5F4FA;
 
 }
@@ -16,7 +19,7 @@ body {
 }
 
 .logo {
-    color: var(--additional-text-color);
+    color: var(--additional-primary-text-color);
     font-family: Raleway, sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -32,7 +35,7 @@ body {
     list-style: none;
 }
 .button-studio {
-    color: var(--primary-background-color);
+    color: var(--primary-button-color);
     background-color: var(--accent);
     font-family: inherit;
     font-weight: 700;
@@ -43,13 +46,13 @@ body {
 }
 .button-studio:hover,
 .button-studio:focus {
-    color: var(--primary-background-color);
+    color: var(--primary-button-color);
     background-color: var(--secondary-accent);
 }
 
 .button-portfolio {
-    color: var(--additional-text-color);
-    background-color: var(--team-background-color);
+    color: var(--additional-primary-text-color);
+    background-color: var(--button-bg-color);
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
@@ -59,14 +62,14 @@ body {
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
-    color: var(--primary-background-color);
+    color: var(--primary-button-color);
     background-color: var(--accent);
 }
 
 .features-title,
 .work-title,
 .team-title {
-    color: var(--additional-text-color);
+    color: var(--additional-primary-text-color);
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -87,7 +90,7 @@ body {
 }
 /* Шапка сайта */
 .site-nav .link {
-    color: var(--additional-text-color);
+    color: var(--additional-primary-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -122,7 +125,7 @@ body {
     background-color: var(--secondary-background-color)
 }
 .hero-title {
-    color: var(--primary-background-color);
+    color: var(--additional-secondary-text-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -132,7 +135,7 @@ body {
 }
 /* Особенности */
 .features-list-title {
-    color: var(--additional-text-color);
+    color: var(--additional-primary-text-color);
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -154,7 +157,7 @@ body {
     background-color: var(--primary-background-color);
 }
 .team-card-title {
-    color: var(--additional-text-color);
+    color: var(--additional-primary-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19; 
@@ -170,7 +173,7 @@ body {
     background-color: var(--secondary-background-color);
 }
 .additional-accent {
-    color: var(--primary-background-color);
+    color: var(--additional-secondary-text-color);
 }
 .address-nav .link {
     color: var(--secondary-text-color);
@@ -196,7 +199,7 @@ body {
     text-decoration: none;
 }
 .portfolio-title {
-    color: var(--additional-text-color);
+    color: var(--additional-primary-text-color);
     font-weight: 700;
     font-size: 18px;
     line-height: 2.00;
