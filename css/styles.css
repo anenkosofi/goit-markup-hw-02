@@ -3,11 +3,9 @@
     --additional-text-color: #212121;
     --accent: #2196F3;
     --secondary-accent: #188CE8;
-    --secondary-text-color: #FFFFFF;
-    --additional-secondary-text-color: rgba(255, 255, 255, 0.6);
-    --primary-background-color: #E5E5E5;
+    --primary-background-color: #FFFFFF;
+    --secondary-text-color: rgba(255, 255, 255, 0.6);
     --secondary-background-color: #2F303A;
-    --portfolio-bcg-color: #EEEEEE;
     --team-background-color: #F5F4FA;
 
 }
@@ -34,7 +32,7 @@ body {
     list-style: none;
 }
 .button-studio {
-    color: var(--secondary-text-color);
+    color: var(--primary-background-color);
     background-color: var(--accent);
     font-family: inherit;
     font-weight: 700;
@@ -45,7 +43,7 @@ body {
 }
 .button-studio:hover,
 .button-studio:focus {
-    color: var(--secondary-text-color);
+    color: var(--primary-background-color);
     background-color: var(--secondary-accent);
 }
 
@@ -61,7 +59,7 @@ body {
 }
 .button-portfolio:hover,
 .button-portfolio:focus {
-    color: var(--secondary-text-color);
+    color: var(--primary-background-color);
     background-color: var(--accent);
 }
 
@@ -124,7 +122,7 @@ body {
     background-color: var(--secondary-background-color)
 }
 .hero-title {
-    color: var(--secondary-text-color);
+    color: var(--primary-background-color);
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -153,7 +151,7 @@ body {
     background-color: var(--team-background-color);
 }
 .team-card {
-    background-color: var(--secondary-text-color);
+    background-color: var(--primary-background-color);
 }
 .team-card-title {
     color: var(--additional-text-color);
@@ -172,10 +170,10 @@ body {
     background-color: var(--secondary-background-color);
 }
 .additional-accent {
-    color: var(--secondary-text-color);
+    color: var(--primary-background-color);
 }
 .address-nav .link {
-    color: var(--additional-secondary-text-color);
+    color: var(--secondary-text-color);
     font-family: inherit;
     font-style: normal;
     font-size: 14px;
@@ -187,15 +185,12 @@ body {
     color: var(--accent);
 }
 .address-nav .map {
-    color: var(--secondary-text-color);
+    color: var(--primary-background-color);
 }
 /* Страница Портфолио */
-.body-portfolio {
-    background-color: var(--portfolio-bcg-color);
-}
 /* Блок Герой */
 .portfolio-card {
-    background-color: var(--secondary-text-color);
+    background-color: var(--primary-background-color);
 }
 .portfolio-card .link {
     text-decoration: none;
