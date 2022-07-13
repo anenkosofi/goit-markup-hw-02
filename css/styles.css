@@ -2,18 +2,19 @@
     --primary-text-color: #757575;
     --additional-text-color: #212121;
     --accent: #2196F3;
+    --secondary-accent: #188CE8;
     --secondary-text-color: #FFFFFF;
     --additional-secondary-text-color: rgba(255, 255, 255, 0.6);
-    --primary-background-color: #F5F4FA;
+    --primary-background-color: #E5E5E5;
     --secondary-background-color: #2F303A;
-    --portfolio-bcg-color: #EEEEEE
+    --portfolio-bcg-color: #EEEEEE;
+    --team-background-color: #F5F4FA;
 
 }
 body {
     color: var(--primary-text-color);
     background-color: var(--primary-background-color);
     font-family: Roboto, sans-serif;
-    letter-spacing: 0.03em;
 }
 
 .logo {
@@ -23,6 +24,7 @@ body {
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
+    letter-spacing: 0.03em;
     
 }
 .logo-accent {
@@ -32,8 +34,8 @@ body {
     list-style: none;
 }
 .button-studio {
-    color: var(--additional-text-color);
-    background-color: var(--primary-background-color);
+    color: var(--secondary-text-color);
+    background-color: var(--accent);
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -44,14 +46,23 @@ body {
 .button-studio:hover,
 .button-studio:focus {
     color: var(--secondary-text-color);
-    background-color: var(--accent);
+    background-color: var(--secondary-accent);
 }
 
 .button-portfolio {
+    color: var(--additional-text-color);
+    background-color: var(--team-background-color);
+    font-family: inherit;
     font-weight: 500;
+    font-size: 16px;
     line-height: 1.62;
-    letter-spacing: inherit;
-      
+    letter-spacing: 0.03em; 
+    cursor: pointer;
+}
+.button-portfolio:hover,
+.button-portfolio:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent);
 }
 
 .features-title,
@@ -62,6 +73,7 @@ body {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
+    letter-spacing: 0.03em;
 }
 .visually-hidden {
     position: absolute;
@@ -104,7 +116,7 @@ body {
     color: var(--accent);
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
     letter-spacing: 0.02em;
 }
 /* Блок Герой */
@@ -126,15 +138,20 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.03em;
     text-transform: uppercase;
 }
 .features-text {
     font-size: 14px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 /* Чем мы занимаемся */
 
 /* Наша команда */
+.team {
+    background-color: var(--team-background-color);
+}
 .team-card {
     background-color: var(--secondary-text-color);
 }
@@ -142,11 +159,13 @@ body {
     color: var(--additional-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.19px;  
+    line-height: 1.19; 
+    letter-spacing: 0.03em;
 }
 .team-description {
     font-size: 16px;
     line-height: 1.17;
+    letter-spacing: 0.03em;
 }
 /* Подвал */
 .footer {
@@ -178,6 +197,9 @@ body {
 .portfolio-card {
     background-color: var(--secondary-text-color);
 }
+.portfolio-card .link {
+    text-decoration: none;
+}
 .portfolio-title {
     color: var(--additional-text-color);
     font-weight: 700;
@@ -186,6 +208,8 @@ body {
     letter-spacing: 0.06em;
 }
 .portfolio-description {
+    color: var(--primary-text-color);
     font-size: 16px;
     line-height: 1.88;
+    letter-spacing: 0.03em;
 }
